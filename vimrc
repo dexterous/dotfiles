@@ -28,6 +28,10 @@ Bundle 'scrooloose/syntastic', '2.2.0'
 Bundle 'mattn/gist-vim', '5.9'
 Bundle 'tpope/vim-cucumber'
 
+autocmd BufNewFile,BufRead *.gradle set filetype=groovy
+autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+autocmd BufNewFile,BufRead requirements*.txt set filetype=python
+
 "TODO: figure out config
 "Bundle 'klen/python-mode', '0.6.10'
 "Bundle 'VimClojure', '2.3.6'
