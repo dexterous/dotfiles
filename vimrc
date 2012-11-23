@@ -55,3 +55,8 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
+
+set hlsearch
+set incsearch
+
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
