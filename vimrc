@@ -23,6 +23,7 @@ Bundle 'scrooloose/nerdcommenter', 'v2.3.0'
 Bundle 'chrisbra/NrrwRgn'
 Bundle 'ZoomWin'
 Bundle 'VimOrganizer'
+Bundle 'nelstrom/vim-visual-star-search', '0.2'
 
 Bundle 'scrooloose/syntastic', '2.2.0'
 Bundle 'mattn/gist-vim', '5.9'
