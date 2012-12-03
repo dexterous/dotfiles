@@ -15,7 +15,8 @@ Bundle 'tpope/vim-fugitive', 'v1.2'
 Bundle 'scrooloose/nerdtree', 'v4.2.0'
 Bundle 'spf13/undotree', 'rel_4.1'
 Bundle 'Lokaltog/vim-powerline'
-"Bundle 'majutsushi/tagbar', '70fix'
+Bundle 'majutsushi/tagbar', '70fix'
+Bundle 'myusuf3/numbers.vim'
 
 Bundle 'tpope/vim-surround', 'v1.90'
 Bundle 'godlygeek/tabular'
@@ -40,9 +41,6 @@ autocmd BufNewFile,BufRead requirements*.txt set filetype=python
 "XXX: not detecting
 "Bundle 'tpope/vim-markdown'
 "Bundle 'greyblake/vim-preview', 'v0.8'
-
-"XXX: requires vim 7.3+
-"Bundle 'myusuf3/numbers.vim'
 
 colorscheme solarized
 
