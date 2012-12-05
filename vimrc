@@ -58,4 +58,4 @@ set smarttab
 set hlsearch
 set incsearch
 
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+nnoremap <silent> <C-l> :nohlsearch<CR>
