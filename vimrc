@@ -30,6 +30,7 @@ Bundle 'scrooloose/syntastic', '2.2.0'
 Bundle 'mattn/gist-vim', '5.9'
 Bundle 'tpope/vim-cucumber'
 
+"non-standard file type detection
 autocmd BufNewFile,BufRead *.gradle set filetype=groovy
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead requirements*.txt set filetype=python
@@ -42,24 +43,29 @@ autocmd BufNewFile,BufRead requirements*.txt set filetype=python
 "Bundle 'tpope/vim-markdown'
 "Bundle 'greyblake/vim-preview', 'v0.8'
 
+"colours
 colorscheme solarized
 
 set background=dark
 
+"UI tweaks
 set number
 set nowrap
 
+"tabstop settings
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
 
+"search settings
 set hlsearch
 set incsearch
 
 nnoremap <silent> <C-l> :nohlsearch<CR>
 
+"tagbar settings
 let g:tagbar_autoclose=1
 let g:tagbar_autofocus=1
 
