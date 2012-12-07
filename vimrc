@@ -59,3 +59,10 @@ set hlsearch
 set incsearch
 
 nnoremap <silent> <C-l> :nohlsearch<CR>
+
+let g:tagbar_autoclose=1
+let g:tagbar_autofocus=1
+
+set updatetime=1000
+
+nnoremap <silent> <M-t> :TagbarToggle<CR>
