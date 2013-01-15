@@ -18,3 +18,7 @@ set lines=50
 if exists('&colorcolumn')
     set colorcolumn=120
 endif
+
+"highlight special characters
+set listchars=tab:▸\ ,eol:¬,trail:ᵒ
+set list
