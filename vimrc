@@ -36,6 +36,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'chrisbra/NrrwRgn'
 Bundle 'ZoomWin'
 Bundle 'nelstrom/vim-visual-star-search'
+Bundle 'YankRing.vim'
 Bundle 'ack.vim'
 Bundle 'tpope/vim-abolish'
 Bundle 'paredit.vim'
@@ -66,6 +67,11 @@ let g:syntastic_mode_map = { 'passive_filetypes': ['java'] }
 
 "paredit config
 let g:paredit_electric_return = 0
+
+"yankring config
+let g:yankring_min_element_length = 2
+let g:yankring_window_use_horiz = 0
+let g:yankring_window_width = 80
 
 "TODO: figure out config
 "Bundle 'klen/python-mode'
