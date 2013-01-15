@@ -13,6 +13,7 @@ Bundle 'altercation/vim-colors-solarized'
 
 Bundle 'tpope/vim-fugitive', 'v1.2'
 Bundle 'scrooloose/nerdtree', 'v4.2.0'
+Bundle 'kien/ctrlp.vim', '1.78'
 Bundle 'spf13/undotree', 'rel_4.1'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar', '70fix'
@@ -25,6 +26,7 @@ Bundle 'chrisbra/NrrwRgn'
 Bundle 'ZoomWin'
 Bundle 'VimOrganizer'
 Bundle 'nelstrom/vim-visual-star-search', '0.2'
+Bundle 'ack.vim', '0.3.1'
 
 Bundle 'scrooloose/syntastic', '2.2.0'
 Bundle 'mattn/gist-vim', '5.9'
@@ -51,6 +53,7 @@ set background=dark
 "UI tweaks
 set number
 set nowrap
+set hidden
 
 "tabstop settings
 set tabstop=4
@@ -72,3 +75,7 @@ let g:tagbar_autofocus=1
 set updatetime=1000
 
 nnoremap <silent> <M-t> :TagbarToggle<CR>
+
+"reset keyword lookup program to :help
+set keywordprg=
+autocmd BufNewFile,BufRead *.py set keywordprg=pydoc
