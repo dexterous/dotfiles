@@ -15,3 +15,6 @@ set t_vb=
 
 set columns=180
 set lines=50
+if exists('&colorcolumn')
+    set colorcolumn=120
+endif
