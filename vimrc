@@ -75,6 +75,7 @@ let g:yankring_window_width = 80
 
 "TODO: figure out config
 "Bundle 'klen/python-mode'
+"Bundle 'nvie/vim-pyunit'
 "Bundle 'VimClojure'
 
 "colours
