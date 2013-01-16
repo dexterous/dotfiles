@@ -69,8 +69,10 @@ set incsearch
 nnoremap <silent> <C-l> :nohlsearch<CR>
 
 "tagbar settings
-let g:tagbar_autoclose=1
-let g:tagbar_autofocus=1
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
+let g:tagbar_compact = 1
+let g:tagbar_foldlevel = 0
 
 set updatetime=1000
 
