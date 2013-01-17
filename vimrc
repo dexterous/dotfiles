@@ -78,6 +78,9 @@ set updatetime=1000
 
 nnoremap <silent> <M-t> :TagbarToggle<CR>
 
+"NERDtree settings
+nnoremap <silent> <M-n> :NERDTreeToggle<CR>
+
 "reset keyword lookup program to :help
 set keywordprg=
 autocmd BufNewFile,BufRead *.py set keywordprg=pydoc
