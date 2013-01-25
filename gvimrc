@@ -23,3 +23,7 @@ endif
 "highlight special characters
 set listchars=tab:▸\ ,eol:¬,trail:ᵒ
 set list
+
+"presentation mode
+"set background=light
+"set guifont=Inconsolata\ 16
