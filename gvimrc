@@ -5,6 +5,7 @@ set guioptions-=T " remove toolbar
 set guioptions-=m " remove menu
 set guioptions-=r " remove right scrollbar
 set guioptions-=L " never show left scrollbar
+set guioptions+=c " use console dialogs
 
 set guitablabel=%t\ %m\ %r
 set guitabtooltip=%F
