@@ -27,6 +27,7 @@ Bundle 'ZoomWin'
 Bundle 'VimOrganizer'
 Bundle 'nelstrom/vim-visual-star-search', '0.2'
 Bundle 'ack.vim', '0.3.1'
+Bundle 'tpope/abolish', 'v1.0'
 
 Bundle 'scrooloose/syntastic', '2.2.0'
 Bundle 'mattn/gist-vim', '5.9'
