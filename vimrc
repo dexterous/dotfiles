@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle', '0.9.1'
 Bundle 'altercation/vim-colors-solarized'
 
 Bundle 'tpope/vim-fugitive', 'v1.2'
+Bundle 'tpope/vim-git', 'v6'
 Bundle 'scrooloose/nerdtree', 'v4.2.0'
 Bundle 'kien/ctrlp.vim', '1.78'
 Bundle 'spf13/undotree', 'rel_4.1'
