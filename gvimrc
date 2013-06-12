@@ -22,7 +22,7 @@ endif
 
 "highlight special characters
 set listchars=tab:▸\ ,eol:¬,trail:ᵒ
-set list
+"set list
 
 "presentation mode
 "set background=light
