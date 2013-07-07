@@ -1,0 +1,13 @@
+[$Version]
+update_info=yakuake.upd:2.9.9-startupnotification
+
+[Animation]
+Frames=20
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[Window]
+DynamicTabTitles=true
+Height=100
+Width=100
