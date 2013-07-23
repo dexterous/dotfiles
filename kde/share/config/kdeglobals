@@ -1,0 +1,30 @@
+[$Version]
+update_info=kded.upd:kde3.0
+
+[DirSelect Dialog]
+DirSelectDialog Size=795,577
+History Items[$e]=file://$HOME/Downloads/coursera/sdn
+
+[KDE]
+SingleClick=false
+
+[KFileDialog Settings]
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Previews=true
+Show Bookmarks=true
+Show Full Path=true
+Show Preview=true
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort reversed=false
+Speedbar Width=130
+View Style=Simple
+
+[Locale]
+Country=in
+
+[PreviewSettings]
+MaximumRemoteSize=0
