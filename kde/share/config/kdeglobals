@@ -11,6 +11,9 @@ SingleClick=false
 [KFileDialog Settings]
 Automatically select filename extension=true
 Breadcrumb Navigation=true
+Decoration position=0
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
 Previews=true
 Show Bookmarks=true
 Show Full Path=true
