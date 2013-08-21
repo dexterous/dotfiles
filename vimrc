@@ -39,6 +39,10 @@ Bundle 'tpope/vim-abolish', 'v1.0'
 Bundle 'mattn/gist-vim', '5.9'
 Bundle 'tpope/vim-cucumber'
 Bundle 'VimOrganizer'
+Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-fireplace'
+"Bundle 'tpope/vim-classpath'
+
 "non-standard file type detection
 autocmd BufNewFile,BufRead *.gradle set filetype=groovy
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
