@@ -7,10 +7,13 @@ let mapleader = ","
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+"bootstrap
 Bundle 'gmarik/vundle', '0.9.1'
 
+"colours
 Bundle 'altercation/vim-colors-solarized'
 
+"powertools
 Bundle 'tpope/vim-fugitive', 'v1.2'
 Bundle 'tpope/vim-git', 'v6'
 Bundle 'scrooloose/nerdtree', 'v4.2.0'
@@ -20,6 +23,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar', '70fix'
 Bundle 'myusuf3/numbers.vim'
 
+"editing tools
 Bundle 'tpope/vim-surround', 'v1.90'
 Bundle 'godlygeek/tabular'
 Bundle 'scrooloose/nerdcommenter', 'v2.3.0'
@@ -30,6 +34,7 @@ Bundle 'nelstrom/vim-visual-star-search', '0.2'
 Bundle 'ack.vim', '0.3.1'
 Bundle 'tpope/vim-abolish', 'v1.0'
 
+"filetypes
 Bundle 'scrooloose/syntastic', '2.2.0'
 Bundle 'mattn/gist-vim', '5.9'
 Bundle 'tpope/vim-cucumber'
