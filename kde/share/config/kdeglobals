@@ -3,7 +3,9 @@ update_info=kded.upd:kde3.0
 
 [DirSelect Dialog]
 DirSelectDialog Size=795,577
-History Items[$e]=file://$HOME/Downloads/coursera/sdn
+
+[General]
+BrowserApplication=google-chrome.desktop
 
 [KDE]
 SingleClick=false
@@ -17,10 +19,10 @@ PathCombo Completionmode=5
 Previews=true
 Show Bookmarks=true
 Show Full Path=true
-Show Preview=true
+Show Preview=false
 Show Speedbar=true
 Show hidden files=false
-Sort by=Name
+Sort by=Type
 Sort directories first=true
 Sort reversed=false
 Speedbar Width=130
