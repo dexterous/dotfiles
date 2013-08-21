@@ -15,13 +15,13 @@ Bundle 'altercation/vim-colors-solarized'
 
 "powertools
 Bundle 'tpope/vim-fugitive', 'v1.2'
-Bundle 'tpope/vim-git', 'v6'
 Bundle 'scrooloose/nerdtree', 'v4.2.0'
 Bundle 'kien/ctrlp.vim', '1.78'
 Bundle 'spf13/undotree', 'rel_4.1'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar', '70fix'
 Bundle 'myusuf3/numbers.vim'
+Bundle 'scrooloose/syntastic', '2.2.0'
 
 "editing tools
 Bundle 'tpope/vim-surround', 'v1.90'
@@ -35,10 +35,10 @@ Bundle 'ack.vim', '0.3.1'
 Bundle 'tpope/vim-abolish', 'v1.0'
 
 "filetypes
-Bundle 'scrooloose/syntastic', '2.2.0'
+"Bundle 'tpope/vim-git', 'v6' "we're past 7.2
 Bundle 'mattn/gist-vim', '5.9'
 Bundle 'tpope/vim-cucumber'
-
+Bundle 'VimOrganizer'
 "non-standard file type detection
 autocmd BufNewFile,BufRead *.gradle set filetype=groovy
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
