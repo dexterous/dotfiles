@@ -1,5 +1,4 @@
 set nocompatible
-filetype off
 syntax on
 
 let mapleader = ","
