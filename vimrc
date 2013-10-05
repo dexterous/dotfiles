@@ -33,6 +33,8 @@ Bundle 'VimOrganizer'
 Bundle 'nelstrom/vim-visual-star-search', '0.2'
 Bundle 'ack.vim', '0.3.1'
 Bundle 'tpope/vim-abolish', 'v1.0'
+Bundle 'paredit.vim'
+"Bundle 'Smart-Parentheses'
 
 "filetypes
 "Bundle 'tpope/vim-git', 'v6' "we're past 7.2
@@ -47,6 +49,9 @@ Bundle 'tpope/vim-fireplace'
 autocmd BufNewFile,BufRead *.gradle set filetype=groovy
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead requirements*.txt set filetype=python
+
+"paredit config
+let g:paredit_electric_return = 0
 
 "TODO: figure out config
 "Bundle 'klen/python-mode', '0.6.10'
