@@ -50,6 +50,9 @@ autocmd BufNewFile,BufRead *.gradle set filetype=groovy
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead requirements*.txt set filetype=python
 
+"syntastic config
+let g:syntastic_mode_map = { 'passive_filetypes': ['java'] }
+
 "paredit config
 let g:paredit_electric_return = 0
 
