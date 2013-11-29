@@ -43,7 +43,6 @@ Bundle 'VimOrganizer'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 "Bundle 'tpope/vim-classpath'
-Bundle 'tpope/vim-markdown'
 Bundle 'greyblake/vim-preview', 'v0.8'
 
 "non-standard file type detection
