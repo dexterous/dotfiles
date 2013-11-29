@@ -43,8 +43,11 @@ Bundle 'VimOrganizer'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 "Bundle 'tpope/vim-classpath'
+Bundle 'tpope/vim-markdown'
+Bundle 'greyblake/vim-preview', 'v0.8'
 
 "non-standard file type detection
+autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd BufNewFile,BufRead *.gradle set filetype=groovy
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead requirements*.txt set filetype=python
@@ -58,10 +61,6 @@ let g:paredit_electric_return = 0
 "TODO: figure out config
 "Bundle 'klen/python-mode', '0.6.10'
 "Bundle 'VimClojure', '2.3.6'
-
-"XXX: not detecting
-"Bundle 'tpope/vim-markdown'
-"Bundle 'greyblake/vim-preview', 'v0.8'
 
 "colours
 colorscheme solarized
@@ -91,6 +90,9 @@ let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 let g:tagbar_compact = 1
 let g:tagbar_foldlevel = 0
+
+"Preview settings
+let g:PreviewBrowsers = 'google-chrome,firefox'
 
 set updatetime=1000
 
