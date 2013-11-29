@@ -120,12 +120,14 @@ fi
 
 set -o vi
 
-JAVA_HOME=/opt/java/current
+export JAVA_HOME=/opt/java/current
 GROOVY_HOME=/opt/groovy/current
 GRADLE_HOME=/opt/gradle/current
 MAVEN_HOME=/opt/maven/current
 ANT_HOME=/opt/ant/current
+GRAILS_HOME=/opt/grails/current
+HEROKU_HOME=/usr/local/heroku
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-PATH=$PATH:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$HOME/.rvm/bin
+PATH=$PATH:$HOME/.rvm/bin:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$GRAILS_HOME/bin:$HEROKU_HOME/bin
