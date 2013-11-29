@@ -1,4 +1,6 @@
 Host *
+    HashKnownHosts no
     ControlMaster auto
-    ControlPath ~/.ssh/master-%r@%h:%p
+    ControlPath ~/.ssh/control/%r@%h:%p
+    ControlPersist 600
     GSSAPIAuthentication no
