@@ -4,3 +4,6 @@ Host *
     ControlPath ~/.ssh/control/%r@%h:%p
     ControlPersist 600
     GSSAPIAuthentication no
+
+Host rubyconfindia.org
+    User ajey
