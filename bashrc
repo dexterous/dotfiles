@@ -126,8 +126,11 @@ GRADLE_HOME=/opt/gradle/current
 MAVEN_HOME=/opt/maven/current
 ANT_HOME=/opt/ant/current
 GRAILS_HOME=/opt/grails/current
+PACKER_HOME=/opt/packer/current
+KINDLEGEN_HOME=/opt/kindlegen
 HEROKU_HOME=/usr/local/heroku
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-PATH=$PATH:$HOME/.rvm/bin:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$GRAILS_HOME/bin:$HEROKU_HOME/bin
+PATH=$PATH:$HOME/.rvm/bin:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin
+PATH=$PATH:$GRAILS_HOME/bin:$PACKER_HOME:$KINDLEGEN_HOME:$HEROKU_HOME/bin
