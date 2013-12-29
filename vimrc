@@ -1,6 +1,8 @@
 set nocompatible
 syntax on
 
+set directory=~/.vim/swap/,~/tmp,/var/tmp
+
 let mapleader = ","
 
 set rtp+=~/.vim/bundle/vundle/
