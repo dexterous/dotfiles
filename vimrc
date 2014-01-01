@@ -8,6 +8,8 @@ let mapleader = ","
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+let g:vundle_default_git_proto = 'git'
+
 "bootstrap
 Bundle 'gmarik/vundle', '0.9.1'
 
