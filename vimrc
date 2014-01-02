@@ -27,6 +27,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'scrooloose/syntastic'
+Bundle 'rosenfeld/conque-term'
 Bundle 'VimOrganizer'
 
 "editing tools
@@ -51,6 +52,9 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 "Bundle 'tpope/vim-classpath'
 Bundle 'greyblake/vim-preview'
+Bundle 'hoffoo/vim-grails-console'
+Bundle 'dexterous/grails-vim'
+"Bundle 'sjurgemeyer/vim-grails-import'
 
 " re-enable
 filetype plugin indent on
@@ -72,6 +76,11 @@ let g:paredit_electric_return = 0
 let g:yankring_min_element_length = 2
 let g:yankring_window_use_horiz = 0
 let g:yankring_window_width = 80
+
+"grails config
+let g:GrailsShellStartSplit = 1
+let g:ConqueTerm_ReadUnfocused = 1 " run while not the selected window
+let g:ConqueTerm_CloseOnEnd = 1 " quit grails when done
 
 "TODO: figure out config
 "Bundle 'klen/python-mode'
