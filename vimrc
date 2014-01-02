@@ -27,6 +27,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-dispatch'
 Bundle 'rosenfeld/conque-term'
 Bundle 'VimOrganizer'
 
