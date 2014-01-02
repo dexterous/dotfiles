@@ -11,43 +11,43 @@ call vundle#rc()
 let g:vundle_default_git_proto = 'git'
 
 "bootstrap
-Bundle 'gmarik/vundle', '0.9.1'
+Bundle 'gmarik/vundle'
 
 "colours
 Bundle 'altercation/vim-colors-solarized'
 
 "powertools
-Bundle 'tpope/vim-fugitive', 'v1.2'
-Bundle 'scrooloose/nerdtree', 'v4.2.0'
-Bundle 'kien/ctrlp.vim', '1.78'
-Bundle 'spf13/undotree', 'rel_4.1'
+Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
+Bundle 'spf13/undotree'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'majutsushi/tagbar', '70fix'
+Bundle 'majutsushi/tagbar'
 Bundle 'myusuf3/numbers.vim'
-Bundle 'scrooloose/syntastic', '2.2.0'
+Bundle 'scrooloose/syntastic'
 
 "editing tools
-Bundle 'tpope/vim-surround', 'v1.90'
+Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
-Bundle 'scrooloose/nerdcommenter', 'v2.3.0'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'chrisbra/NrrwRgn'
 Bundle 'ZoomWin'
 Bundle 'VimOrganizer'
-Bundle 'nelstrom/vim-visual-star-search', '0.2'
-Bundle 'ack.vim', '0.3.1'
-Bundle 'tpope/vim-abolish', 'v1.0'
+Bundle 'nelstrom/vim-visual-star-search'
+Bundle 'ack.vim'
+Bundle 'tpope/vim-abolish'
 Bundle 'paredit.vim'
 "Bundle 'Smart-Parentheses'
 
 "filetypes
 "Bundle 'tpope/vim-git', 'v6' "we're past 7.2
-Bundle 'mattn/gist-vim', '5.9'
+Bundle 'mattn/gist-vim'
 Bundle 'tpope/vim-cucumber'
 Bundle 'VimOrganizer'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 "Bundle 'tpope/vim-classpath'
-Bundle 'greyblake/vim-preview', 'v0.8'
+Bundle 'greyblake/vim-preview'
 
 "non-standard file type detection
 autocmd BufNewFile,BufRead *.md set filetype=markdown
@@ -62,8 +62,8 @@ let g:syntastic_mode_map = { 'passive_filetypes': ['java'] }
 let g:paredit_electric_return = 0
 
 "TODO: figure out config
-"Bundle 'klen/python-mode', '0.6.10'
-"Bundle 'VimClojure', '2.3.6'
+"Bundle 'klen/python-mode'
+"Bundle 'VimClojure'
 
 "colours
 colorscheme solarized
