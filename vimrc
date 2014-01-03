@@ -107,6 +107,7 @@ nnoremap <silent> <M-t> :TagbarToggle<CR>
 
 "NERDtree settings
 nnoremap <silent> <M-n> :NERDTreeToggle<CR>
+nnoremap <silent> <M-f> :NERDTreeFind<CR>
 
 "reset keyword lookup program to :help
 set keywordprg=
