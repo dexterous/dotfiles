@@ -1,4 +1,5 @@
 set nocompatible
+filetype off
 syntax on
 
 set directory=~/.vim/swap/,~/tmp,/var/tmp
@@ -48,6 +49,9 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 "Bundle 'tpope/vim-classpath'
 Bundle 'greyblake/vim-preview'
+
+" re-enable
+filetype plugin indent on
 
 "non-standard file type detection
 autocmd BufNewFile,BufRead *.md set filetype=markdown
