@@ -1,10 +1,11 @@
 set nocompatible
 filetype off
-syntax on
 
-set directory=~/.vim/swap/,~/tmp,/var/tmp
+set directory=~/.vim/swap//,~/tmp//,/var/tmp//
 
 let mapleader = ","
+
+set rtp+=$GOROOT/misc/vim/
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -52,6 +53,7 @@ Bundle 'greyblake/vim-preview'
 
 " re-enable
 filetype plugin indent on
+syntax on
 
 "non-standard file type detection
 autocmd BufNewFile,BufRead *.md set filetype=markdown
