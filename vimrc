@@ -79,9 +79,14 @@ let g:yankring_window_use_horiz = 0
 let g:yankring_window_width = 80
 
 "grails config
+let g:ConqueTerm_ReadUnfocused = 1
+let g:ConqueTerm_CloseOnEnd = 1
+let g:ConqueTerm_CWInsert = 1
 let g:GrailsShellStartSplit = 1
-let g:ConqueTerm_ReadUnfocused = 1 " run while not the selected window
-let g:ConqueTerm_CloseOnEnd = 1 " quit grails when done
+"let g:GrailsShellReturnKey = "<C-CR>"
+let g:GrailsTestsBrowser = 'google-chrome --app=file://'
+autocmd BufEnter _grails_ set number
+autocmd BufEnter _grails_ set norelativenumber
 
 "TODO: figure out config
 "Bundle 'klen/python-mode'
