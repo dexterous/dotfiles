@@ -44,6 +44,7 @@ Bundle 'paredit.vim'
 "filetypes
 "Bundle 'tpope/vim-git', 'v6' "we're past 7.2
 Bundle 'mattn/gist-vim'
+Bundle 'mattn/webapi-vim'
 Bundle 'tpope/vim-cucumber'
 Bundle 'VimOrganizer'
 Bundle 'guns/vim-clojure-static'
