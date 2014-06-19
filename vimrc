@@ -101,12 +101,12 @@ let g:tagbar_autofocus = 1
 let g:tagbar_compact = 1
 let g:tagbar_foldlevel = 0
 
-"Preview settings
-let g:PreviewBrowsers = 'google-chrome,firefox'
-
 set updatetime=1000
 
 nnoremap <silent> <M-t> :TagbarToggle<CR>
+
+"Preview settings
+let g:PreviewBrowsers = 'google-chrome,firefox'
 
 "NERDtree settings
 nnoremap <silent> <M-n> :NERDTreeToggle<CR>
