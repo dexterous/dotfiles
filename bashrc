@@ -134,7 +134,15 @@ HEROKU_HOME=/usr/local/heroku
 export GOROOT=$GO_HOME
 export GOPATH=$HOME/gocode
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+declare -a scripts_to_source=(
+  "$HOME/.rvm/scripts/rvm"
+  "$HOME/.homesick/repos/homeshick/homeshick.sh"
+  "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+)
+
+for script in ${scripts_to_source[*]}; do
+  [[ -s "$script" ]] && source "$script"
+done
 
 PATH=$PATH:$HOME/.rvm/bin:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin
 PATH=$PATH:$GRAILS_HOME/bin:$PACKER_HOME:$GO_HOME/bin:$GOPATH/bin:$KINDLEGEN_HOME:$HEROKU_HOME/bin
