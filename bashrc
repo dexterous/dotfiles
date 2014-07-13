@@ -122,12 +122,13 @@ set -o vi
 
 export JAVA_HOME=/opt/java/current
 GROOVY_HOME=/opt/groovy/current
+GO_HOME=/opt/go/current
+NODE_HOME=/opt/node/current
 GRADLE_HOME=/opt/gradle/current
 MAVEN_HOME=/opt/maven/current
 ANT_HOME=/opt/ant/current
 GRAILS_HOME=/opt/grails/current
 PACKER_HOME=/opt/packer/current
-GO_HOME=/opt/go/current
 KINDLEGEN_HOME=/opt/kindlegen
 HEROKU_HOME=/usr/local/heroku
 
@@ -144,5 +145,6 @@ for script in ${scripts_to_source[*]}; do
   [[ -s "$script" ]] && source "$script"
 done
 
-PATH=$PATH:$HOME/.rvm/bin:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin
-PATH=$PATH:$GRAILS_HOME/bin:$PACKER_HOME:$GO_HOME/bin:$GOPATH/bin:$KINDLEGEN_HOME:$HEROKU_HOME/bin
+PATH=$PATH:$HOME/.rvm/bin:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GO_HOME/bin:$GOPATH/bin:$NODE_HOME/bin
+PATH=$PATH:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin
+PATH=$PATH:$GRAILS_HOME/bin:$PACKER_HOME:$KINDLEGEN_HOME:$HEROKU_HOME/bin
