@@ -54,7 +54,7 @@ Bundle 'tpope/vim-fireplace'
 "Bundle 'tpope/vim-classpath'
 Bundle 'greyblake/vim-preview'
 Bundle 'hoffoo/vim-grails-console'
-Bundle 'dexterous/grails-vim'
+Bundle 'NathanNeff/grails-vim'
 "Bundle 'sjurgemeyer/vim-grails-import'
 
 " re-enable
