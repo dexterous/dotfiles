@@ -80,6 +80,7 @@ set background=dark
 set number
 set nowrap
 set hidden
+set laststatus=2
 
 "tabstop settings
 set tabstop=2
