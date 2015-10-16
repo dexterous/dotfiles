@@ -1,0 +1,10 @@
+#!/bin/bash
+
+_hibernate_notify() {
+  kdialog \
+    --title "Hibernate failed ($?)" \
+    --passivepopup "Could not Hibernate system!" \
+    15
+}
+
+sudo pm-hibernate || _hibernate_notify

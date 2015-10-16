@@ -4,3 +4,6 @@
 [submodule "home/.vim/bundle/vundle"]
 	path = home/.vim/bundle/vundle
 	url = git://github.com/gmarik/vundle.git
+[submodule "dq"]
+	path = dq
+	url = git://github.com/dexterous/dq.git
