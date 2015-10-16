@@ -132,6 +132,7 @@ PACKER_HOME=/opt/packer/current
 HEROKU_HOME=/usr/local/heroku
 NEO4J_HOME=/opt/neo4j/current
 IDEA_HOME=/opt/idea/current
+RUBYMINE_HOME=/opt/rubymine/current
 
 export GOROOT=$GO_HOME
 export GOPATH=$HOME/gocode
@@ -149,4 +150,4 @@ done
 PATH=$PATH:$HOME/.rvm/bin:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GO_HOME/bin:$GOPATH/bin:$NODE_HOME/bin
 PATH=$PATH:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$NEO4J_HOME/bin
 PATH=$PATH:$GRAILS_HOME/bin:$PACKER_HOME:$HEROKU_HOME/bin
-PATH=$PATH:$IDEA_HOME/bin
+PATH=$PATH:$IDEA_HOME/bin:$RUBYMINE_HOME/bin
