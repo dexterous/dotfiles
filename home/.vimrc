@@ -3,71 +3,64 @@ set directory=~/.vim/swap//,~/tmp//,/var/tmp//
 let mapleader = ","
 
 set nocompatible
-filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-let g:vundle_default_git_proto = 'git'
-
-"bootstrap
-Bundle 'VundleVim/Vundle.vim'
+call plug#begin('/tmp/plugged')
 
 "colours
-Bundle 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 
 "powertools
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdtree'
-Bundle 'ctrlpvim/ctrlp.vim'
-Bundle 'spf13/undotree'
-Bundle 'itchyny/lightline.vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-dispatch'
-Bundle 'rosenfeld/conque-term'
-Bundle 'VimOrganizer'
-Bundle 'kana/vim-textobj-user'
-Bundle 'kana/vim-textobj-function'
-Bundle 'matchit.zip'
-Bundle 'nelstrom/vim-textobj-rubyblock'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'spf13/undotree'
+Plug 'itchyny/lightline.vim'
+Plug 'majutsushi/tagbar'
+Plug 'myusuf3/numbers.vim'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-dispatch'
+Plug 'rosenfeld/conque-term'
+Plug 'VimOrganizer'
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-function'
+Plug 'matchit.zip'
+Plug 'nelstrom/vim-textobj-rubyblock'
 
 "editing tools
-Bundle 'tpope/vim-surround'
-Bundle 'godlygeek/tabular'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'chrisbra/NrrwRgn'
-Bundle 'ZoomWin'
-Bundle 'nelstrom/vim-visual-star-search'
-"Bundle 'YankRing.vim'
-Bundle 'ack.vim'
-Bundle 'tpope/vim-abolish'
-Bundle 'paredit.vim'
-"Bundle 'Smart-Parentheses'
-Bundle 'SirVer/ultisnips'
-Bundle 'honza/vim-snippets'
+Plug 'tpope/vim-surround'
+Plug 'godlygeek/tabular'
+Plug 'scrooloose/nerdcommenter'
+Plug 'chrisbra/NrrwRgn'
+Plug 'ZoomWin'
+Plug 'nelstrom/vim-visual-star-search'
+"Plug 'YankRing.vim'
+Plug 'ack.vim'
+Plug 'tpope/vim-abolish'
+Plug 'paredit.vim'
+"Plug 'Smart-Parentheses'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 "filetypes
-"Bundle 'tpope/vim-git', 'v6' "we're past 7.2
-Bundle 'mattn/gist-vim'
-Bundle 'mattn/webapi-vim'
-Bundle 'tpope/vim-cucumber'
-Bundle 'guns/vim-clojure-static'
-Bundle 'tpope/vim-fireplace'
-"Bundle 'tpope/vim-classpath'
-Bundle 'greyblake/vim-preview'
-Bundle 'hoffoo/vim-grails-console'
-Bundle 'NathanNeff/grails-vim'
-"Bundle 'sjurgemeyer/vim-grails-import'
-Bundle 'hashivim/vim-terraform'
+"Plug 'tpope/vim-git', 'v6' "we're past 7.2
+Plug 'mattn/gist-vim'
+Plug 'mattn/webapi-vim'
+Plug 'tpope/vim-cucumber'
+Plug 'guns/vim-clojure-static'
+Plug 'tpope/vim-fireplace'
+"Plug 'tpope/vim-classpath'
+Plug 'greyblake/vim-preview'
+Plug 'hoffoo/vim-grails-console'
+Plug 'NathanNeff/grails-vim'
+"Plug 'sjurgemeyer/vim-grails-import'
+Plug 'hashivim/vim-terraform'
 
 "TODO: figure out config
-"Bundle 'klen/python-mode'
-"Bundle 'nvie/vim-pyunit'
-"Bundle 'VimClojure'
+"Plug 'klen/python-mode'
+"Plug 'nvie/vim-pyunit'
+"Plug 'VimClojure'
 
-call vundle#end()
+call plug#end()
 
 " re-enable
 filetype plugin indent on
