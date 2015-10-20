@@ -55,6 +55,11 @@ Bundle 'hoffoo/vim-grails-console'
 Bundle 'NathanNeff/grails-vim'
 "Bundle 'sjurgemeyer/vim-grails-import'
 
+"TODO: figure out config
+"Bundle 'klen/python-mode'
+"Bundle 'nvie/vim-pyunit'
+"Bundle 'VimClojure'
+
 " re-enable
 filetype plugin indent on
 syntax on
@@ -85,11 +90,6 @@ let g:GrailsShellStartSplit = 1
 let g:GrailsTestsBrowser = 'google-chrome --app=file://'
 autocmd BufEnter _grails_ set number
 autocmd BufEnter _grails_ set norelativenumber
-
-"TODO: figure out config
-"Bundle 'klen/python-mode'
-"Bundle 'nvie/vim-pyunit'
-"Bundle 'VimClojure'
 
 "colours
 colorscheme solarized
