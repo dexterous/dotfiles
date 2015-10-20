@@ -1,9 +1,9 @@
-set nocompatible
-filetype off
-
 set directory=~/.vim/swap//,~/tmp//,/var/tmp//
 
 let mapleader = ","
+
+set nocompatible
+filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
