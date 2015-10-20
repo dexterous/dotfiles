@@ -5,8 +5,6 @@ set directory=~/.vim/swap//,~/tmp//,/var/tmp//
 
 let mapleader = ","
 
-set rtp+=$GOROOT/misc/vim/
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
