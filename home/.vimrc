@@ -109,6 +109,10 @@ set shiftwidth=2
 set expandtab
 set smarttab
 
+"highlight special characters
+set listchars=tab:»\ ,eol:¬,trail:°,nbsp:¤
+set list
+
 "search settings
 set hlsearch
 set incsearch
