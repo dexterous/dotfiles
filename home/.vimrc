@@ -19,7 +19,7 @@ Bundle 'altercation/vim-colors-solarized'
 "powertools
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'spf13/undotree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar'
