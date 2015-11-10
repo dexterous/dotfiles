@@ -28,6 +28,10 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-dispatch'
 Bundle 'rosenfeld/conque-term'
 Bundle 'VimOrganizer'
+Bundle 'kana/vim-textobj-user'
+Bundle 'kana/vim-textobj-function'
+Bundle 'matchit.zip'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 
 "editing tools
 Bundle 'tpope/vim-surround'
