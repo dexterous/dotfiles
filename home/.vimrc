@@ -5,13 +5,13 @@ let mapleader = ","
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 let g:vundle_default_git_proto = 'git'
 
 "bootstrap
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/Vundle.vim'
 
 "colours
 Bundle 'altercation/vim-colors-solarized'
