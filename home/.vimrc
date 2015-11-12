@@ -21,7 +21,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'spf13/undotree'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'itchyny/lightline.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'scrooloose/syntastic'
@@ -124,6 +124,9 @@ set hlsearch
 set incsearch
 
 nnoremap <silent> <C-l> :nohlsearch<CR>
+
+"airline setting
+let g:lightline = { 'colorscheme': 'solarized_dark' }
 
 "tagbar settings
 let g:tagbar_autoclose = 1
