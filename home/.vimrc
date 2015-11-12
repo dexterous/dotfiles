@@ -116,7 +116,7 @@ set expandtab
 set smarttab
 
 "highlight special characters
-set listchars=tab:»\ ,eol:¬,trail:°,nbsp:¤
+set listchars=tab:Â»\ ,eol:Â¬,trail:Â¤,nbsp:Â°
 "set list
 
 "search settings
