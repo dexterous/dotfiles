@@ -6,7 +6,7 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
+call vundle#begin()
 
 let g:vundle_default_git_proto = 'git'
 
@@ -63,6 +63,8 @@ Bundle 'NathanNeff/grails-vim'
 "Bundle 'klen/python-mode'
 "Bundle 'nvie/vim-pyunit'
 "Bundle 'VimClojure'
+
+call vundle#end()
 
 " re-enable
 filetype plugin indent on
