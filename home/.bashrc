@@ -150,7 +150,7 @@ for script in ${scripts_to_source[*]}; do
   [[ -s "$script" ]] && source "$script"
 done
 
-PATH=$PATH:$HOME/.rvm/bin:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GO_HOME/bin:$GOPATH/bin:$NODE_HOME/bin
+PATH=$PATH:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GO_HOME/bin:$GOPATH/bin:$NODE_HOME/bin
 PATH=$PATH:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$NEO4J_HOME/bin
 PATH=$PATH:$GRAILS_HOME/bin:$HEROKU_HOME/bin
 PATH=$PATH:$IDEA_HOME/bin:$RUBYMINE_HOME/bin
