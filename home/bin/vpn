@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#set -x
+set -e
+
+COMMAND=$1
+VPN_CONF=${2:-ocrolus}
+VPN_SERVICE="openvpn@${VPN_CONF}.service"
+
+case $COMMAND in
+  start)
+    sudo systemctl stop systemd-ask-password-wall.path
+    sudo systemctl stop systemd-ask-password-wall.service
+
+    sudo systemctl start $VPN_SERVICE
+
+    sudo systemd-tty-ask-password-agent --query
+    sudo systemd-tty-ask-password-agent --query
+
+    tailf -1 /var/log/syslog | grep --color --max-count=1 \
+      "ovpn-$VPN_CONF\[[[:digit:]]\+\]: \(TUN/TAP device tun[[:digit:]] opened\|AUTH: Received control message: AUTH_FAILED\)"
+
+    sudo systemctl start systemd-ask-password-wall.path
+    ;;
+  stop)
+    sudo systemctl stop $VPN_SERVICE
+    ;;
+esac
+
+sudo systemctl status $VPN_SERVICE | grep "^\s*Active:"
+ifconfig -s | grep ^tun
