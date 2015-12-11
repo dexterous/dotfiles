@@ -108,6 +108,8 @@ set nowrap
 set hidden
 set laststatus=2
 
+inoremap <C-j> <Esc>
+
 "tabstop settings
 set tabstop=2
 set softtabstop=2
