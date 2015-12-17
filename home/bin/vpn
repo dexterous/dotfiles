@@ -25,6 +25,10 @@ case $COMMAND in
   stop)
     sudo systemctl stop $VPN_SERVICE
     ;;
+  restart)
+    $0 stop
+    $0 start
+    ;;
 esac
 
 sudo systemctl status $VPN_SERVICE | grep "^\s*Active:"
