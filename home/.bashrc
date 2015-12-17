@@ -140,10 +140,13 @@ DOCKER_COMPOSE_HOME=/opt/docker-compose/current
 export GOROOT=$GO_HOME
 export GOPATH=$HOME/gocode
 
+export WORKON_HOME=~/.venv
+
 declare -a scripts_to_source=(
   "$HOME/.rvm/scripts/rvm"
   "$HOME/.homesick/repos/homeshick/homeshick.sh"
   "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+  "/usr/local/bin/virtualenvwrapper.sh"
 )
 
 for script in ${scripts_to_source[*]}; do
