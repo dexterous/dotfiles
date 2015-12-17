@@ -29,7 +29,20 @@ case $COMMAND in
     $0 stop
     $0 start
     ;;
+  stats)
+    $0 logs &
+    TAILF_PID=$(ps --ppid=$! --no-headers -o pid -o comm | grep tailf$ | cut -d ' ' -f 1)
+
+    sudo systemctl kill --signal=USR2 $VPN_SERVICE
+
+    kill $TAILF_PID
+    exit 0
+    ;;
+  logs)
+    tailf /var/log/syslog | grep $VPN_CONF
+    exit 0
+    ;;
 esac
 
-sudo systemctl status $VPN_SERVICE | grep "^\s*Active:"
+sudo systemctl status $VPN_SERVICE | sed -ne "/^\s*Active:/ { s,^\s\+,,; p; }"
 ifconfig -s | grep ^tun
