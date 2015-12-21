@@ -29,6 +29,11 @@ case $COMMAND in
     $0 stop
     $0 start
     ;;
+  status)
+    sudo systemctl status $VPN_SERVICE | sed -ne "/^\s*Active:/ { s,^\s\+,,; p; }"
+    ifconfig -s | grep ^tun
+    exit 0
+    ;;
   stats)
     $0 logs &
     TAILF_PID=$(ps --ppid=$! --no-headers -o pid -o comm | grep tailf$ | cut -d ' ' -f 1)
@@ -44,5 +49,4 @@ case $COMMAND in
     ;;
 esac
 
-sudo systemctl status $VPN_SERVICE | sed -ne "/^\s*Active:/ { s,^\s\+,,; p; }"
-ifconfig -s | grep ^tun
+$0 status
