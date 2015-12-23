@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#set -x
 set -e
+#set -x
 
 COMMAND=$1
 VPN_CONF=${2:-ocrolus}
@@ -9,6 +9,8 @@ VPN_SERVICE="openvpn@${VPN_CONF}.service"
 
 case $COMMAND in
   start)
+    systemctl is-active $VPN_SERVICE && break
+
     sudo systemctl stop systemd-ask-password-wall.path
     sudo systemctl stop systemd-ask-password-wall.service
 
@@ -36,7 +38,9 @@ case $COMMAND in
     ;;
   stats)
     $0 logs &
-    TAILF_PID=$(ps --ppid=$! --no-headers -o pid -o comm | grep tailf$ | cut -d ' ' -f 1)
+    sleep 0.25s
+
+    TAILF_PID=$(ps --ppid=$! --no-headers -o pid -o comm | sed -ne '/tailf/ { s,^\s*\([[:digit:]]\+\).*$,\1,; p }')
 
     sudo systemctl kill --signal=USR2 $VPN_SERVICE
 
