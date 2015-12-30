@@ -9,7 +9,10 @@ VPN_SERVICE="openvpn@${VPN_CONF}.service"
 
 case $COMMAND in
   start)
-    systemctl is-active $VPN_SERVICE && break
+    if systemctl is-active $VPN_SERVICE &>/dev/null; then
+      $0 status
+      exit 0
+    fi
 
     sudo systemctl stop systemd-ask-password-wall.path
     sudo systemctl stop systemd-ask-password-wall.service
