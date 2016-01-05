@@ -45,6 +45,8 @@ Bundle 'ack.vim'
 Bundle 'tpope/vim-abolish'
 Bundle 'paredit.vim'
 "Bundle 'Smart-Parentheses'
+Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
 
 "filetypes
 "Bundle 'tpope/vim-git', 'v6' "we're past 7.2
@@ -86,6 +88,9 @@ let g:paredit_electric_return = 0
 let g:yankring_min_element_length = 2
 let g:yankring_window_use_horiz = 0
 let g:yankring_window_width = 80
+
+"ultisnips config
+let g:UltiSnipsEditSplit="vertical"
 
 "grails config
 let g:ConqueTerm_ReadUnfocused = 1
