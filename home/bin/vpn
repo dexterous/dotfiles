@@ -41,11 +41,10 @@ case $COMMAND in
     ;;
   stats)
     $0 logs &
-    sleep 0.25s
-
-    TAILF_PID=$(ps --ppid=$! --no-headers -o pid -o comm | sed -ne '/tailf/ { s,^\s*\([[:digit:]]\+\).*$,\1,; p }')
+    TAILF_PID=$(pgrep -P $! -x tailf)
 
     sudo systemctl kill --signal=USR2 $VPN_SERVICE
+    sleep 0.25s
 
     kill $TAILF_PID
     exit 0
