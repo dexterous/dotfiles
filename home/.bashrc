@@ -131,12 +131,14 @@ GRAILS_HOME=/opt/grails/current
 PACKER_HOME=/opt/packer/current
 VAULT_HOME=/opt/vault/current
 CONSUL_HOME=/opt/consul/current
+JQ_HOME=/opt/jq/current
+DOCKER_MACHINE_HOME=/opt/docker-machine/current
+DOCKER_COMPOSE_HOME=/opt/docker-compose/current
 HEROKU_HOME=/usr/local/heroku
 NEO4J_HOME=/opt/neo4j/current
 IDEA_HOME=/opt/idea/current
 RUBYMINE_HOME=/opt/rubymine/current
-DOCKER_MACHINE_HOME=/opt/docker-machine/current
-DOCKER_COMPOSE_HOME=/opt/docker-compose/current
+VSCODE_HOME=/opt/vscode
 
 export GOROOT=$GO_HOME
 export GOPATH=$HOME/gocode
@@ -157,5 +159,5 @@ done
 PATH=$PATH:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GO_HOME/bin:$GOPATH/bin:$NODE_HOME/bin
 PATH=$PATH:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$NEO4J_HOME/bin
 PATH=$PATH:$GRAILS_HOME/bin:$HEROKU_HOME/bin
-PATH=$PATH:$IDEA_HOME/bin:$RUBYMINE_HOME/bin
-PATH=$PATH:$PACKER_HOME:$VAULT_HOME:$CONSUL_HOME:$DOCKER_MACHINE_HOME:$DOCKER_COMPOSE_HOME
+PATH=$PATH:$IDEA_HOME/bin:$RUBYMINE_HOME/bin:$VSCODE_HOME
+PATH=$PATH:$PACKER_HOME:$VAULT_HOME:$CONSUL_HOME:$JQ_HOME:$DOCKER_MACHINE_HOME:$DOCKER_COMPOSE_HOME
