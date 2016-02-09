@@ -1,7 +1,6 @@
-#!/bin/bash
+#!/bin/bash -e
 
-set -e
-#set -x
+#set -o xtrace
 
 COMMAND=$1
 VPN_CONF=${2:-ocrolus}
