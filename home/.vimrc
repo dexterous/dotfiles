@@ -155,3 +155,6 @@ nnoremap <silent> <M-f> :NERDTreeFind<CR>
 "reset keyword lookup program to :help
 set keywordprg=
 autocmd BufNewFile,BufRead *.py set keywordprg=pydoc
+
+"custom keymapping
+cnoremap w!! w !sudo tee % >/dev/null
