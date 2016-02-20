@@ -1,3 +1,6 @@
-#!/bin/bash
+#!/bin/bash -e
+
+#set -o xtrace
+
 
 echo $PATH | tr ':' "\n"
