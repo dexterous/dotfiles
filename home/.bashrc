@@ -132,12 +132,14 @@ PACKER_HOME=/opt/packer/current
 VAULT_HOME=/opt/vault/current
 CONSUL_HOME=/opt/consul/current
 JQ_HOME=/opt/jq/current
+LITTLEBOX_HOME=/opt/littlebox/current
 DOCKER_MACHINE_HOME=/opt/docker-machine/current
 DOCKER_COMPOSE_HOME=/opt/docker-compose/current
 HEROKU_HOME=/usr/local/heroku
 NEO4J_HOME=/opt/neo4j/current
 IDEA_HOME=/opt/idea/current
 RUBYMINE_HOME=/opt/rubymine/current
+PYCHARM_HOME=/opt/pycharm/current
 VSCODE_HOME=/opt/vscode
 
 export GOROOT=$GO_HOME
@@ -158,6 +160,6 @@ done
 
 PATH=$PATH:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GO_HOME/bin:$GOPATH/bin:$NODE_HOME/bin
 PATH=$PATH:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$NEO4J_HOME/bin
-PATH=$PATH:$GRAILS_HOME/bin:$HEROKU_HOME/bin
-PATH=$PATH:$IDEA_HOME/bin:$RUBYMINE_HOME/bin:$VSCODE_HOME
+PATH=$PATH:$GRAILS_HOME/bin:$HEROKU_HOME/bin:$LITTLEBOX_HOME/bin
+PATH=$PATH:$IDEA_HOME/bin:$RUBYMINE_HOME/bin:$VSCODE_HOME:$PYCHARM_HOME/bin
 PATH=$PATH:$PACKER_HOME:$VAULT_HOME:$CONSUL_HOME:$JQ_HOME:$DOCKER_MACHINE_HOME:$DOCKER_COMPOSE_HOME
