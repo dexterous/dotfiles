@@ -1,0 +1,40 @@
+#!/bin/bash -e
+
+set +o errexit
+#set -o xtrace
+
+
+if [[ $# -eq 0 ]]; then
+  echo "Usage: $(basename $0) DOMAIN"
+  exit 1
+fi
+
+DOMAIN=$1
+OPTION=$2
+
+case $OPTION in
+  --no-www)
+    for URL in http{,s}://$DOMAIN; do
+      echo "Trying $URL"
+      echo ""
+      curl -iIL $URL
+      echo "========================="
+    done
+
+    exit 0
+    ;;
+  --www)
+    $0 $DOMAIN --no-www
+
+    for URL in http{,s}://www.$DOMAIN; do
+      echo "Trying $URL"
+      echo ""
+      curl -iIL $URL
+      echo "========================="
+    done
+
+    exit 0
+    ;;
+esac
+
+$0 $DOMAIN --www
