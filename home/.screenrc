@@ -1,4 +1,8 @@
-### I got tired of .screenrc's on the internet being so 
+# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
+
+### Created by Brad Sims  25/06/2004
+
+### I got tired of .screenrc's on the internet being so
 ### poorly commented... So being a good GNUbie I took matters
 ### into my own hands; and wrote this dotfile.
 
@@ -9,9 +13,9 @@
 # Ignore the ' marks if you use these examples for yourself
 
 # Note that if you want to use the color brown under konsole
-# You actually use bright yellow (%{Y}). 
+# You actually use bright yellow (%{Y}).
 
-# Note the embeded space after the colon, I feel 
+# Note the embeded space after the colon, I feel
 #  it just looks nicer with a blank between the
 #  text and console edge:
 #   '%{=b}%{G} Screen(s): '
@@ -22,7 +26,7 @@
 # This right-aligns what follows:
 #   '%='
 
-# This displays the time (hours and minutes) in 12hr format 
+# This displays the time (hours and minutes) in 12hr format
 # and adds an AM/PM flag, in bold green:
 #   '%{G}%C%A'
 
@@ -34,13 +38,14 @@
 # between the text and console edge:
 #  '%M/%d/%Y '
 
-# The resulting command give you a status line that 
-#  looks like this: 
+# The resulting command give you a status line that
+#  looks like this:
 #   | Screen(s): 0* bash           5:30PM  Fri, Jun/25/2004 |
 #  (The pipes indicate the edges of the xterm/console).
 
 # Green text, time, and date; windows in blue:
-hardstatus alwayslastline "%{=b}%{G} Screen(s) on %H: %{b}%w %=%{kG}%C%A  %D, %M/%d/%Y "
+hardstatus alwayslastline "%{=b}%{G} Screen(s): %{b}%w %=%{kG}%C%A  %D,
+%M/%d/%Y "
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
 
@@ -49,7 +54,7 @@ hardstatus alwayslastline "%{=b}%{G} Screen(s) on %H: %{b}%w %=%{kG}%C%A  %D, %M
 # Turn off start message:
 startup_message off
 
-# Set messages timeout to one second: 
+# Set messages timeout to one second:
 msgwait 1
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
@@ -67,4 +72,6 @@ bindkey -k k8 kill
 bindkey -k k9 screen
 bindkey -k k; title
 bindkey -k F1 prev
-bindkey -k
+bindkey -k F2 next
+
+# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
