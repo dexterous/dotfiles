@@ -135,6 +135,7 @@ MAVEN_HOME=/opt/maven/current
 ANT_HOME=/opt/ant/current
 GRAILS_HOME=/opt/grails/current
 PACKER_HOME=/opt/packer/current
+LOGSTASH_HOME=/opt/logstash/current
 VAULT_HOME=/opt/vault/current
 CONSUL_HOME=/opt/consul/current
 JQ_HOME=/opt/jq/current
@@ -165,7 +166,7 @@ for script in ${scripts_to_source[*]}; do
 done
 
 PATH=$PATH:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GO_HOME/bin:$GOPATH/bin:$NODE_HOME/bin
-PATH=$PATH:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$NEO4J_HOME/bin
+PATH=$PATH:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$NEO4J_HOME/bin:$LOGSTASH_HOME/bin
 PATH=$PATH:$GRAILS_HOME/bin:$HEROKU_HOME/bin:$LITTLEBOX_HOME/bin
 PATH=$PATH:$IDEA_HOME/bin:$RUBYMINE_HOME/bin:$VSCODE_HOME:$PYCHARM_HOME/bin
 PATH=$PATH:$PACKER_HOME:$VAULT_HOME:$CONSUL_HOME:$JQ_HOME:$DOCKER_MACHINE_HOME:$DOCKER_COMPOSE_HOME
