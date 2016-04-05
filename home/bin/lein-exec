@@ -1,0 +1,16 @@
+#!/bin/bash -e
+
+#set -o xtrace
+
+COMMAND=$(basename $0)
+OPTION=${COMMAND#lein-exec}
+
+if [[ $1 =~ ^[~\/] ]]
+then
+  # its already an absolute path
+  lein exec $OPTION "$@"
+else
+  # This is a relative path, so make it absolute,
+  # using the current directory as the base.
+  lein exec $OPTION $(pwd)/"$@"
+fi
