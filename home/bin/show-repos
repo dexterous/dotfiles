@@ -1,0 +1,10 @@
+#!/bin/bash -e
+
+#set -o xtrace
+
+find ${1-.} -maxdepth 3 -type d -name .git \
+  -exec pwd \; \
+  -exec echo '================' \; \
+  -execdir git remote update \; \
+  -execdir git log --oneline --graph ..@{upstream} \; \
+  -exec echo '' \;
