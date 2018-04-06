@@ -137,7 +137,7 @@ set incsearch
 nnoremap <silent> <C-l> :nohlsearch<CR>
 
 "airline setting
-let g:lightline = { 'colorscheme': 'solarized_dark' }
+"let g:lightline = { 'colorscheme': 'solarized_dark' }
 
 "tagbar settings
 let g:tagbar_autoclose = 1
