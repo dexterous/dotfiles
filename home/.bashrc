@@ -128,7 +128,7 @@ set -o vi
 
 export JAVA_HOME=/opt/java/current
 GROOVY_HOME=/opt/groovy/current
-GO_HOME=/opt/go/current
+GO_HOME=/usr/local/go
 NODE_HOME=/opt/node/current
 GRADLE_HOME=/opt/gradle/current
 MAVEN_HOME=/opt/maven/current
@@ -151,8 +151,8 @@ PYCHARM_HOME=/opt/pycharm/current
 VSCODE_HOME=/opt/vscode
 VISUALVM_HOME=/opt/visualvm/current
 
-export GOROOT=$GO_HOME
-export GOPATH=$HOME/gocode
+#export GOROOT=$GO_HOME
+#export GOPATH=$HOME/gocode
 
 export WORKON_HOME=~/.venv
 
@@ -172,3 +172,5 @@ PATH=$PATH:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$NEO4J_HOME/bin:$LOGST
 PATH=$PATH:$GRAILS_HOME/bin:$HEROKU_HOME/bin:$LITTLEBOX_HOME/bin
 PATH=$PATH:$IDEA_HOME/bin:$RUBYMINE_HOME/bin:$VSCODE_HOME:$PYCHARM_HOME/bin:$VISUALVM_HOME/bin
 PATH=$PATH:$PACKER_HOME:$TERRAFORM_HOME:$VAULT_HOME:$CONSUL_HOME:$JQ_HOME:$DOCKER_MACHINE_HOME:$DOCKER_COMPOSE_HOME
+
+PATH=$PATH:$(go env GOPATH)/bin
