@@ -136,8 +136,18 @@ set incsearch
 
 nnoremap <silent> <C-l> :nohlsearch<CR>
 
-"airline setting
-"let g:lightline = { 'colorscheme': 'solarized_dark' }
+"lightline setting
+set noshowmode
+let g:lightline = {
+      \  'colorscheme': 'solarized',
+      \  'active': {
+      \    'left': [ [ 'mode', 'paste' ],
+      \              [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \  },
+      \  'component_function': {
+      \    'gitbranch': 'fugitive#head'
+      \  }
+      \}
 
 "tagbar settings
 let g:tagbar_autoclose = 1
