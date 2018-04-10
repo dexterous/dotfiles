@@ -20,7 +20,7 @@ case $COMMAND in
 
     $0 askpass
 
-    tailf -1 /var/log/syslog | grep --color --max-count=1 \
+    tail -f -1 /var/log/syslog | grep --color --max-count=1 \
       "ovpn-$VPN_CONF\[[[:digit:]]\+\]: \(TUN/TAP device tun[[:digit:]] opened\|AUTH: Received control message: AUTH_FAILED\)"
 
     sudo systemctl start systemd-ask-password-wall.path
@@ -45,7 +45,7 @@ case $COMMAND in
     ;;
   stats)
     $0 logs &
-    TAILF_PID=$(pgrep -P $! -x tailf)
+    TAILF_PID=$(pgrep -P $! -x tail)
 
     sudo systemctl kill --signal=USR2 $VPN_SERVICE
     sleep 0.25s
@@ -54,7 +54,7 @@ case $COMMAND in
     exit 0
     ;;
   logs)
-    tailf /var/log/syslog | grep $VPN_CONF
+    tail -f /var/log/syslog | grep $VPN_CONF
     exit 0
     ;;
 esac
