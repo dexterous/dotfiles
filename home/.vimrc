@@ -32,6 +32,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-function'
 Bundle 'matchit.zip'
 Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'apalmer1377/factorus'
 
 "editing tools
 Bundle 'tpope/vim-surround'
