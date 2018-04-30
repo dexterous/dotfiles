@@ -61,6 +61,7 @@ Bundle 'hoffoo/vim-grails-console'
 Bundle 'NathanNeff/grails-vim'
 "Bundle 'sjurgemeyer/vim-grails-import'
 Bundle 'hashivim/vim-terraform'
+Bundle 'nginx.vim'
 
 "TODO: figure out config
 "Bundle 'klen/python-mode'
