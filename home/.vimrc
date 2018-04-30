@@ -47,6 +47,7 @@ Bundle 'paredit.vim'
 "Bundle 'Smart-Parentheses'
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
+Bundle 'DrawIt'
 
 "filetypes
 "Bundle 'tpope/vim-git', 'v6' "we're past 7.2
