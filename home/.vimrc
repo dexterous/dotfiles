@@ -114,6 +114,7 @@ set background=dark
 "UI tweaks
 set number
 set nowrap
+set linebreak
 set hidden
 set laststatus=2
 
