@@ -7,6 +7,12 @@ Frames=20
 [Desktop Entry]
 DefaultProfile=Shell.profile
 
+[Dialogs]
+FirstRun=false
+
+[Favorite Profiles]
+Favorites=
+
 [KFileDialog Settings]
 Height 900=450
 Width 1600=800
