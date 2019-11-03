@@ -10,3 +10,6 @@
 	path = dq
 	url = git://github.com/dexterous/dq.git
 	branch = bash-only
+[submodule "home/.config/bat/themes/textmate-solarized"]
+	path = home/.config/bat/themes/textmate-solarized
+	url = git://github.com/deplorableword/textmate-solarized.git
