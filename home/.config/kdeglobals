@@ -108,12 +108,13 @@ ForegroundPositive=42,161,152
 ForegroundVisited=108,113,196
 
 [General]
+BrowserApplication[$e]=google-chrome.desktop
 ColorScheme=151929-SolarizedDark
 Name=Breeze Dark
-XftAntialias=true
-XftHintStyle=
-XftSubPixel=none
+XftHintStyle=hintnone
+XftSubPixel=
 dbfile=/home/dexterous/.mozilla/firefox/1tkxjwyl.default/places.sqlite
+fixed=InconsolataN,10,-1,5,50,0,0,0,0,0,Regular
 shadeSortColumn=true
 toolBarFont=Sans Serif,10,-1,5,50,0,0,0,0,0
 
@@ -142,7 +143,7 @@ Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
-Speedbar Width=110
+Speedbar Width=118
 View Style=DetailTree
 
 [KShortcutsDialog Settings]
@@ -151,6 +152,7 @@ Dialog Size=1920,1051
 [WM]
 activeBackground=7,54,66
 activeBlend=88,110,117
+activeFont=Sans Serif,10,-1,5,50,0,0,0,0,0
 activeForeground=147,161,161
 inactiveBackground=0,43,54
 inactiveBlend=101,123,131
