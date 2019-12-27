@@ -32,6 +32,8 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-function'
 Bundle 'matchit.zip'
 Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'junegunn/fzf'
+Bundle 'tpope/vim-dadbod'
 
 "editing tools
 Bundle 'tpope/vim-surround'
@@ -41,7 +43,8 @@ Bundle 'chrisbra/NrrwRgn'
 Bundle 'ZoomWin'
 Bundle 'nelstrom/vim-visual-star-search'
 "Bundle 'YankRing.vim'
-Bundle 'ack.vim'
+"Bundle 'ack.vim'
+Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-abolish'
 Bundle 'paredit.vim'
 "Bundle 'Smart-Parentheses'
@@ -150,12 +153,19 @@ let g:lightline = {
       \  'colorscheme': 'solarized',
       \  'active': {
       \    'left': [ [ 'mode', 'paste' ],
-      \              [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \              [ 'filename', 'readonly', 'modified' ],
+      \              [ 'gitbranch'] ],
       \  },
       \  'component_function': {
-      \    'gitbranch': 'fugitive#head'
-      \  }
+      \    'gitbranch': 'LightlineGitHead'
+      \  },
+      \  'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+      \  'subseparator': { 'left': "\ue0b1", 'right':  "\ue0b3"},
       \}
+
+function! LightlineGitHead()
+  return fugitive#head() !=# '' ? "\ue0a0 " . fugitive#head() : ''
+endfunction
 
 "tagbar settings
 let g:tagbar_autoclose = 1
