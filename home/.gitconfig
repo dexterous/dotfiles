@@ -7,3 +7,5 @@
 	default = simple
 [github]
 	user = dexterous
+[diff "sopsdiffer"]
+	textconv = sops -d
