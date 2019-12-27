@@ -1,4 +1,4 @@
-set guifont=Inconsolata\ 10
+set guifont=Inconsolata\ for\ Powerline\ Medium\ 10
 set anti " Antialias font
 
 set guioptions-=T " remove toolbar
