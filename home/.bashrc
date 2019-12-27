@@ -132,7 +132,11 @@ fi
 
 set -o vi
 
-export JAVA_HOME=/opt/java/current
+if [[ -d ~/bin/ ]]; then
+  PATH=~/bin/:$PATH
+fi
+
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.232.b09-0.fc31.x86_64
 GROOVY_HOME=/opt/groovy/current
 GO_HOME=/usr/local/go
 NODE_HOME=/opt/node/current
@@ -167,6 +171,7 @@ declare -a scripts_to_source=(
   "$HOME/.homesick/repos/homeshick/homeshick.sh"
   "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
   "/usr/local/bin/virtualenvwrapper.sh"
+  "/usr/share/fzf/shell/key-bindings.bash"
 )
 
 for script in ${scripts_to_source[*]}; do
