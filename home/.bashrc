@@ -140,6 +140,7 @@ export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.232.b09-0.fc31.x86_64
 GROOVY_HOME=/opt/groovy/current
 GO_HOME=/usr/local/go
 NODE_HOME=/opt/node/current
+CARGO_HOME=~/.cargo
 GRADLE_HOME=/opt/gradle/current
 MAVEN_HOME=/opt/maven/current
 ANT_HOME=/opt/ant/current
@@ -179,7 +180,7 @@ for script in ${scripts_to_source[*]}; do
   [[ -s "$script" ]] && source "$script"
 done
 
-PATH=$PATH:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GO_HOME/bin:$GOPATH/bin:$NODE_HOME/bin
+PATH=$PATH:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GO_HOME/bin:$GOPATH/bin:$NODE_HOME/bin:$CARGO_HOME/bin
 PATH=$PATH:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$NEO4J_HOME/bin:$LOGSTASH_HOME/bin
 PATH=$PATH:$GRAILS_HOME/bin:$HEROKU_HOME/bin:$LITTLEBOX_HOME/bin
 PATH=$PATH:$IDEA_HOME/bin:$RUBYMINE_HOME/bin:$VSCODE_HOME:$PYCHARM_HOME/bin:$VISUALVM_HOME/bin
