@@ -23,6 +23,8 @@ Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'spf13/undotree'
 Bundle 'itchyny/lightline.vim'
 Bundle 'majutsushi/tagbar'
+Bundle 'ludovicchabant/vim-gutentags'
+Bundle 'skywind3000/gutentags_plus'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-dispatch'
@@ -50,6 +52,7 @@ Bundle 'paredit.vim'
 "Bundle 'Smart-Parentheses'
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
+Bundle 'tpope/vim-speeddating'
 
 "filetypes
 "Bundle 'tpope/vim-git', 'v6' "we're past 7.2
@@ -153,15 +156,21 @@ let g:lightline = {
       \  'colorscheme': 'solarized',
       \  'active': {
       \    'left': [ [ 'mode', 'paste' ],
-      \              [ 'filename', 'readonly', 'modified' ],
-      \              [ 'gitbranch'] ],
+      \              [ 'gitbranch', 'readonly', 'filename', 'tag', 'modified' ] ],
+		  \    'right': [ [ 'lineinfo' ],
+		  \               [ 'percent' ],
+		  \               [ 'gutentags', 'filetype', 'fileencoding', 'fileformat' ] ]
       \  },
       \  'component_function': {
-      \    'gitbranch': 'LightlineGitHead'
-      \  },
-      \  'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
-      \  'subseparator': { 'left': "\ue0b1", 'right':  "\ue0b3"},
+      \    'gitbranch': 'fugitive#head',
+      \    'tag': 'CurrentTag',
+      \    'gutentags': 'gutentags#statusline'
+      \  }
       \}
+
+function! CurrentTag()
+  return tagbar#currenttag('%s', '')
+endfunction
 
 function! LightlineGitHead()
   return fugitive#head() !=# '' ? "\ue0a0 " . fugitive#head() : ''
@@ -176,6 +185,9 @@ let g:tagbar_foldlevel = 0
 set updatetime=1000
 
 nnoremap <silent> <M-t> :TagbarToggle<CR>
+
+"gutentags settings
+let g:gutentags_cache_dir = '~/.vim/tags//'
 
 "Preview settings
 let g:PreviewBrowsers = 'google-chrome,firefox'
