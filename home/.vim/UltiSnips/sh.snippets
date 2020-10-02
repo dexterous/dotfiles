@@ -1,6 +1,9 @@
 snippet #! "shebang bash!" b
 #!/bin/bash -e
 
-#set -o xtrace
+if [[ -n "$DEBUG" ]]; then
+  set -o xtrace
+  PS4='+[ $(date +%T) ] '
+fi
 
 endsnippet
