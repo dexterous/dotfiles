@@ -145,6 +145,7 @@ GRADLE_HOME=/opt/gradle/current
 MAVEN_HOME=/opt/maven/current
 ANT_HOME=/opt/ant/current
 GRAILS_HOME=/opt/grails/current
+MICRONAUT_HOME=/opt/micronaut/current
 PACKER_HOME=/opt/packer/current
 TERRAFORM_HOME=/opt/terraform/current
 LOGSTASH_HOME=/opt/logstash/current
@@ -160,7 +161,9 @@ IDEA_HOME=/opt/idea/current
 RUBYMINE_HOME=/opt/rubymine/current
 PYCHARM_HOME=/opt/pycharm/current
 VSCODE_HOME=/opt/vscode
+PANDOC_HOME=/opt/pandoc/current
 VISUALVM_HOME=/opt/visualvm/current
+POSTMAN_HOME=/opt/Postman/current
 
 #export GOROOT=$GO_HOME
 #export GOPATH=$HOME/gocode
@@ -173,6 +176,7 @@ declare -a scripts_to_source=(
   "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
   "/usr/local/bin/virtualenvwrapper.sh"
   "/usr/share/fzf/shell/key-bindings.bash"
+  "$MICRONAUT_HOME/bin/mn_completion"
 )
 
 for script in ${scripts_to_source[*]}; do
@@ -182,8 +186,8 @@ done
 
 PATH=$PATH:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GO_HOME/bin:$GOPATH/bin:$NODE_HOME/bin:$CARGO_HOME/bin
 PATH=$PATH:$GRADLE_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$NEO4J_HOME/bin:$LOGSTASH_HOME/bin
-PATH=$PATH:$GRAILS_HOME/bin:$HEROKU_HOME/bin:$LITTLEBOX_HOME/bin
-PATH=$PATH:$IDEA_HOME/bin:$RUBYMINE_HOME/bin:$VSCODE_HOME:$PYCHARM_HOME/bin:$VISUALVM_HOME/bin
-PATH=$PATH:$PACKER_HOME:$TERRAFORM_HOME:$VAULT_HOME:$CONSUL_HOME:$JQ_HOME:$DOCKER_MACHINE_HOME:$DOCKER_COMPOSE_HOME
+PATH=$PATH:$GRAILS_HOME/bin:$MICRONAUT_HOME/bin:$HEROKU_HOME/bin:$LITTLEBOX_HOME/bin
+PATH=$PATH:$IDEA_HOME/bin:$RUBYMINE_HOME/bin:$VSCODE_HOME:$PYCHARM_HOME/bin:$VISUALVM_HOME/bin:$PANDOC_HOME/bin
+PATH=$PATH:$PACKER_HOME:$TERRAFORM_HOME:$VAULT_HOME:$CONSUL_HOME:$JQ_HOME:$DOCKER_MACHINE_HOME:$DOCKER_COMPOSE_HOME:$POSTMAN_HOME
 
 PATH=$PATH:$(go env GOPATH)/bin
