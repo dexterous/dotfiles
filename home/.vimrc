@@ -36,6 +36,7 @@ Bundle 'matchit.zip'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'junegunn/fzf'
 Bundle 'tpope/vim-dadbod'
+Bundle 'bfrg/vim-jqplay'
 
 "editing tools
 Bundle 'tpope/vim-surround'
