@@ -1,5 +1,5 @@
 --theme="Solarized (dark)"
 
 --map-syntax=.gvimrc:vim
---map-syntax=config:ini
---map-syntax=credentials:ini
+--map-syntax=**/.aws/config:INI
+--map-syntax=**/.aws/credentials:INI
