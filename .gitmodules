@@ -2,10 +2,6 @@
 	path = dircolors-solarized
 	url = git://github.com/seebi/dircolors-solarized.git
 	branch = master
-[submodule "vundle"]
-	path = home/.vim/bundle/Vundle.vim
-	url = git://github.com/VundleVim/Vundle.vim.git
-	branch = master
 [submodule "dq"]
 	path = dq
 	url = git://github.com/dexterous/dq.git
