@@ -9,7 +9,7 @@ alias ugh='sudo $(history -p \!\!)'
 alias slow='$(history -p \!\!) | less'
 
 
-alias ls="exa --long --classify"
+alias ls="exa --long --classify --group-directories-first"
 alias tree="ls --tree"
 alias cat="bat"
 alias grep="rg"
