@@ -274,8 +274,8 @@ disabled = false
 [golang]
 format = 'via [$symbol($version )]($style)'
 version_format = 'v${raw}'
-symbol = '🐹 '
-style = 'bold cyan'
+symbol = ' '
+style = 'cyan'
 disabled = false
 detect_extensions = ['go']
 detect_files = [
@@ -544,8 +544,8 @@ python_binary = [
 ]
 format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 version_format = 'v${raw}'
-style = 'yellow bold'
-symbol = '🐍 '
+style = 'blue'
+symbol = ' '
 disabled = false
 detect_extensions = ['py']
 detect_files = [
