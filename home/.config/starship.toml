@@ -207,7 +207,8 @@ detect_files = [
 detect_folders = []
 
 [fill]
-symbol = '_'
+style = 'lightgray'
+symbol = '─'
 
 [gcloud]
 format = 'on [$symbol$account(@$domain)(\($region\))]($style) '
@@ -380,7 +381,7 @@ detect_folders = []
 [kubernetes]
 symbol = '☸ '
 format = '[$symbol$context( \($namespace\))]($style) '
-style = 'cyan bold'
+style = 'white bold'
 disabled = false
 
 [kubernetes.context_aliases]
@@ -697,7 +698,7 @@ detect_folders = ['.terraform']
 
 [time]
 format = '\[[$time]($style)\] '
-style = 'bold lightgreen'
+style = 'bold white'
 use_12hr = true
 disabled = false
 utc_time_offset = 'local'
